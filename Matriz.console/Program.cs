@@ -1,8 +1,8 @@
 ﻿using Matriz.logic
 
-Console.WriteLine("**********************");
-Console.WriteLine("        MATRIZ        ");
-Console.WriteLine("**********************");
+Console.WriteLine("****************************");
+Console.WriteLine(" MULTIPLICACION DE MATRICES ");
+Console.WriteLine("****************************");
 
 
 
@@ -50,8 +50,4 @@ for (int i = 0; i < m; i++)
     Console.WriteLine();
 }
 
-
-Console.WriteLine("**********************");
-Console.WriteLine("        FACTORS       ");
-Console.WriteLine("**********************");
 
