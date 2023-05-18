@@ -23,7 +23,7 @@
             return Factors;
         }
 
-        public static override string ToString(int)
+        public static override string ToString(int, Factors)
         {
             var output = string.Empty;
             foreach (int Factor in Factors)

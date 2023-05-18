@@ -1,88 +1,87 @@
 ﻿using clock.logic;
 
+
 namespace clock.logic
 {
     public static class Clock1
     {
-        public static List<int> Createclock(int N)
+        public static Dictionary<(int, int), int> CreateClock(int N)
         {
-
-            
+            Dictionary<(int, int), int> clock = new Dictionary<(int, int), int>();
 
             for (int i = 0; i < N; i++)
             {
-                List<int> fila = new List<int>(N);
-
                 for (int j = 0; j < N; j++)
                 {
-                    fila.Add(i * 2 + j);
+                    int value = i * 2 + j;
+                    clock.Add((i, j), value);
                 }
-                CreateHourglass.Add(fila);
-
             }
 
-            return CreateHourglass;
+            return clock;
         }
-    }
 
-    public static void showClock(List<List<int>> matriz)
-    {
-    int N = matriz.Count;
-    int inicio = 0;
-    int fin = N - 1;
 
-    while (inicio <= fin)
-    {
-        for (int j = inicio; j <= fin; j++)
+        public static void ShowClock(Dictionary<(int, int), int> clock)
         {
-            Console.Write(matriz[inicio][j] + " ");
-        }
-        Console.WriteLine();
+            int N = (int)Math.Sqrt(clock.Count);
+            int inicio = 0;
+            int fin = N - 1;
 
-        for (int i = inicio + 1; i <= fin; i++)
-        {
-            for (int j = inicio + 1; j <= fin - 1; j++)
+            while (inicio <= fin)
             {
-                Console.Write(matriz[i][j] + " ");
+                for (int j = inicio; j <= fin; j++)
+                {
+                    Console.Write(clock[(inicio, j)] + " ");
+                }
+                Console.WriteLine();
+
+                for (int i = inicio + 1; i <= fin; i++)
+                {
+                    for (int j = inicio + 1; j <= fin - 1; j++)
+                    {
+                        Console.Write(clock[(i, j)] + " ");
+                    }
+                    Console.WriteLine();
+                }
+
+                for (int j = inicio; j <= fin; j++)
+                {
+                    Console.Write(clock[(fin, j)] + " ");
+                }
+                Console.WriteLine();
+
+                inicio++;
+                fin--;
             }
-            Console.WriteLine();
         }
-
-        for (int j = inicio; j <= fin; j++)
-        {
-            Console.Write(matriz[fin][j] + " ");
-        }
-        Console.WriteLine();
-
-        inicio++;
-        fin--;
-    }
-}
         public static void ShowMatrix(List<List<int>> matriz)
         {
-         int filas = matriz.Count;
-         int columnas = matriz[0].Count;
+            int filas = matriz.Count;
+            int columnas = matriz[0].Count;
 
-        for (int i = 0; i < filas; i++)
-        {
-              for (int j = 0; j < columnas; j++)
-              {
-             Console.Write(matriz[i][j] + " ");
-              }
-        Console.WriteLine();
-        }
-        return ShowMatrix;
-        }
-
-    public override String ToString()
-    {
-        string output = string.Empty;
-        foreach (int Matriz in Matriz)
-        {
-            Console.WriteLine($"La matriz es{});
+            for (int i = 0; i < filas; i++)
+            {
+                for (int j = 0; j < columnas; j++)
+                {
+                    Console.Write(matriz[i][j] + " ");
+                }
+                Console.WriteLine();
             }
 
-        return output;
-    }
+        }
 
+        public static String ToString(int[,] numbers)
+        {
+            string output = string.Empty;
+            foreach (int Matriz in numbers)
+            {
+                output += $"{number}\t";
+
+            }
+
+            return output;
+        }
+
+    }
 }

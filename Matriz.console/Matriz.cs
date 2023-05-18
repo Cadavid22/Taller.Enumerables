@@ -6,6 +6,8 @@ namespace Matriz.logic
     {
         public static void FillMyMatriz(int m, int n, int p)
         {
+            int[,]A= new int[m, n];
+            int[,]B= new int[n, p];
             for (int i = 0; i < m; i++)
             {
                 for (int j = 0; j < n; j++)
