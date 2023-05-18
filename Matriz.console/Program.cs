@@ -1,4 +1,4 @@
-﻿using Matriz.logic
+﻿
 
 Console.WriteLine("****************************");
 Console.WriteLine(" MULTIPLICACION DE MATRICES ");
@@ -19,6 +19,10 @@ Console.Write("Ingrese el valor de n: ");
 int[,] A = new int[m, n];
 int[,] B = new int[n, p];
 int[,] C = new int[m, p];
+
+Console.WriteLine("*** MATRIZ A Y MATRIZ B ***");
+Console.WriteLine(FillMyMatriz);
+Console.WriteLine(MultiplyMatriz);
 
 
 
