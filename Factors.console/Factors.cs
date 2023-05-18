@@ -3,7 +3,8 @@
     public static class PrimeFactors
     {
         public static List<int> GetPrimeFactors(int number)
-        {
+         {
+
             List<int> Factors = new List<int>();
             int divisor = 2;
 
@@ -20,6 +21,17 @@
                 }
             }
             return Factors;
+        }
+
+        public static override string ToString(int)
+        {
+            var output = string.Empty;
+            foreach (int Factor in Factors)
+            {
+                Console.WriteLine($"Los numeros primos son: {Factor}");
+            }
+
+            return output;
         }
 
     }

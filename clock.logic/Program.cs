@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+Console.WriteLine("***********************");
+Console.WriteLine("     RELOJ DE ARENA    ");
+Console.WriteLine("***********************");
+
+Console.WriteLine("RELOJ DE ARENA");
+MostrarRelojArena(matriz);

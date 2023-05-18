@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matriz.logic", "Matriz.logic\Matriz.logic.csproj", "{A97990B7-01D9-499C-890E-B8BD0E998F69}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matriz.console", "Matriz.console\Matriz.console.csproj", "{EAC5D7CB-8CBB-4DDE-AF59-B09BEDA67453}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix.console", "Matriz.console\Matrix.console.csproj", "{EAC5D7CB-8CBB-4DDE-AF59-B09BEDA67453}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factors.console", "Factors.console\Factors.console.csproj", "{995C0B48-3729-4934-8F4E-9C8DCF2EE403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clock.console", "clock.logic\clock.console.csproj", "{44898FC4-2976-4703-BD9B-A4364238E515}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chess.console", "chess.console\chess.console.csproj", "{26E862EF-6308-42F5-A459-FC1581EBA7C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chess1.console", "chess1.console\chess1.console.csproj", "{11FDA07E-BA7E-4DA9-9DE6-584EA0415AA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A97990B7-01D9-499C-890E-B8BD0E998F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A97990B7-01D9-499C-890E-B8BD0E998F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A97990B7-01D9-499C-890E-B8BD0E998F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A97990B7-01D9-499C-890E-B8BD0E998F69}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EAC5D7CB-8CBB-4DDE-AF59-B09BEDA67453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EAC5D7CB-8CBB-4DDE-AF59-B09BEDA67453}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAC5D7CB-8CBB-4DDE-AF59-B09BEDA67453}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +27,18 @@ Global
 		{995C0B48-3729-4934-8F4E-9C8DCF2EE403}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{995C0B48-3729-4934-8F4E-9C8DCF2EE403}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{995C0B48-3729-4934-8F4E-9C8DCF2EE403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44898FC4-2976-4703-BD9B-A4364238E515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44898FC4-2976-4703-BD9B-A4364238E515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44898FC4-2976-4703-BD9B-A4364238E515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44898FC4-2976-4703-BD9B-A4364238E515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26E862EF-6308-42F5-A459-FC1581EBA7C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E862EF-6308-42F5-A459-FC1581EBA7C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E862EF-6308-42F5-A459-FC1581EBA7C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26E862EF-6308-42F5-A459-FC1581EBA7C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11FDA07E-BA7E-4DA9-9DE6-584EA0415AA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11FDA07E-BA7E-4DA9-9DE6-584EA0415AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11FDA07E-BA7E-4DA9-9DE6-584EA0415AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11FDA07E-BA7E-4DA9-9DE6-584EA0415AA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

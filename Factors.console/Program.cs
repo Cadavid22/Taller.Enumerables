@@ -1,5 +1,10 @@
-﻿
-using Matriz.logic;
+﻿using Matriz.logic;
+
+
+Console.WriteLine("****************************");
+Console.WriteLine(" DESCOMPOSICION EN FACTORES ");
+Console.WriteLine("****************************");
+
 
 Console.WriteLine("Enter a number: ");
 int number = int.Parse(Console.ReadLine());

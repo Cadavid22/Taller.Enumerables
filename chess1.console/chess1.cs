@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace chess1.console
+﻿namespace chess1.console
 {
-    internal class chess1
+    public class chess1
     {
     }
 }
