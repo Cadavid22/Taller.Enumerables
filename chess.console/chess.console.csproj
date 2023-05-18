@@ -8,6 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\chess1.console\chess1.console.csproj" />
+    <ProjectReference Include="..\clock.logic\clock.console.csproj" />
+    <ProjectReference Include="..\Factors.console\Factors.console.csproj" />
     <ProjectReference Include="..\Matriz.console\Matrix.console.csproj" />
   </ItemGroup>
 

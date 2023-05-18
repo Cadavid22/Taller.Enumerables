@@ -4,10 +4,12 @@ namespace Matriz.logic
 {
     public static class Matriz
     {
-        public static void FillMyMatriz(int m, int n, int p)
+        public static void GetFillMyMatriz(int m, int n, int p)
         {
             int[,]A= new int[m, n];
             int[,]B= new int[n, p];
+            int[,]C = new int[m, p];
+
             for (int i = 0; i < m; i++)
             {
                 for (int j = 0; j < n; j++)
@@ -31,7 +33,7 @@ namespace Matriz.logic
            }
             
         }
-        public static int[,] MultiplyMatriz(int[,] A, int[,] B)
+        public static int[,] GetMultiplyMatriz(int[,] A, int[,] B)
         {
             int m = A.GetLength(0);
             int n = A.GetLength(1);

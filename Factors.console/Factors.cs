@@ -23,12 +23,12 @@
             return Factors;
         }
 
-        public static override string ToString(int, Factors)
+        public static string ToString(int[]  numbers)
         {
             var output = string.Empty;
-            foreach (int Factor in Factors)
+            foreach (int number in numbers)
             {
-                Console.WriteLine($"Los numeros primos son: {Factor}");
+                output += $"{number}\t";
             }
 
             return output;
